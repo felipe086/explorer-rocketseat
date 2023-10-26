@@ -15,4 +15,10 @@ Neste módulo veremos conceitos básicos sobre programação: como e por que pro
 Além disso, iremos abordar sobre o que é e como funciona a WEB e entender melhor os conceitos de Front-end e Back-end.
 </p>
 
+### Stage 2 - Introdução ao HTML e CSS
+
+<p align="left">
+Neste módulo veremos os conceitos de HTML e CSS estruturando de forma semântica. Aprenderemos a utilizar a ferramenta Figma, aplicaremos fontes e cores personalizadas em nossos projetos, entenderemos como posicionar e espaçar os elementos utilizando os conceitos de Box Model e FlexBox do CSS.
+</p>
+
 </div>
