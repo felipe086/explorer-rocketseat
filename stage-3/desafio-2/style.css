@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #bfd7e4;
+  padding: 3rem 1rem 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #4e4958;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26rem;
+  width: 100%;
+  background-color: #293241;
+  z-index: -1;
+}
+
+.container {
+  max-width: 750px;
+  margin-inline: auto;
+}
+
+header {
+  text-align: center;
+  color: #ffffff;
+}
+
+header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+header img {
+  padding-block: 2rem;
+}
+
+form {
+  border-radius: 1.25rem;
+  padding: 9rem 4rem 4rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+legend:not(.accent) {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+}
+
+.accent {
+  background-color: #f67669;
+  color: #ffffff;
+  position: absolute;
+  padding: 3rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.input-wrapper label {
+  font-size: 0.875rem;
+}
+
+.input-wrapper label span {
+  color: #c1bccc;
+  font-size: 0.75rem;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background-color: #fafafc;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input-wrapper textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.checkbox-wrapper label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.checkbox-wrapper label::before {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid #e6e6f0;
+  border-radius: 0.5rem;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_2702_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%23F67669'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2702_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid #000000;
+}
+
+.input-wrapper input[type="date"],
+.input-wrapper input[type="time"] {
+  text-align: center;
+}
+
+.input-wrapper input:focus:invalid,
+.input-wrapper select:focus:invalid,
+.input-wrapper textarea:focus:invalid {
+  outline-color: #ff5374;
+}
+
+button {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 3rem;
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f67669;
+  border: none;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 650px) {
+  form {
+    padding: 8rem 3rem 3rem;
+  }
+
+  .accent {
+    padding: 2.5rem;
+  }
+
+  .col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-3 .input-wrapper:first-child {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    padding: 9rem 2rem 2rem;
+  }
+  .col-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 300px) {
+  form {
+    padding: 7rem 1.5rem 1.5rem;
+  }
+  .accent {
+    padding: 2rem;
+  }
+}
