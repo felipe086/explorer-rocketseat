@@ -21,4 +21,10 @@ Além disso, iremos abordar sobre o que é e como funciona a WEB e entender melh
 Neste módulo veremos os conceitos de HTML e CSS estruturando de forma semântica. Aprenderemos a utilizar a ferramenta Figma, aplicaremos fontes e cores personalizadas em nossos projetos, entenderemos como posicionar e espaçar os elementos utilizando os conceitos de Box Model e FlexBox do CSS.
 </p>
 
+### Stage 3 - Avançando no HTML e CSS
+
+<p align="left">
+Neste módulo veremos sobre formulários no HTML e vários tipos de inputs. Aprenderemos sobre responsividade, para que o nosso projeto se adapte a vários tipos de dispositivos. Trabalharemos com Grid no CSS e faremos transições a animações para deixar o nosso projeto ainda mais robusto.
+</p>
+
 </div>
