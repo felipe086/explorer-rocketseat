@@ -27,4 +27,9 @@ Neste módulo veremos os conceitos de HTML e CSS estruturando de forma semântic
 Neste módulo veremos sobre formulários no HTML e vários tipos de inputs. Aprenderemos sobre responsividade, para que o nosso projeto se adapte a vários tipos de dispositivos. Trabalharemos com Grid no CSS e faremos transições a animações para deixar o nosso projeto ainda mais robusto.
 </p>
 
+### Stage 4 - Introdução à programação, lógica e algoritmos com JavaScript
+
+<p align="left">
+Neste módulo veremos sobre: Variáveis, operadores matemáticos, tipos de dados no JavaScript, operadores comparativos, estruturas de repetição e condicionais, Arrays e aprenderemos sobre funções no JavaScript e como utilizá-las.
+</p>
 </div>
