@@ -16,7 +16,7 @@ Atualizar o index.html com o exercício a ser visto.
 
 ## [Exercício 7](./exercicio7.js) - Interagindo com um menu de opções
 
-## [Exercício 6](./exercicio8.js) - Estruturando dados com Objetos - Crie uma lista de pacientes
+## [Exercício 8](./exercicio8.js) - Estruturando dados com Objetos - Crie uma lista de pacientes
 
 ## [Exercício 9](./exercicio9.js) - Calculando IMC dos pacientes com Funções
 
