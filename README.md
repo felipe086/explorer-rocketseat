@@ -32,4 +32,10 @@ Neste módulo veremos sobre formulários no HTML e vários tipos de inputs. Apre
 <p align="left">
 Neste módulo veremos sobre: Variáveis, operadores matemáticos, tipos de dados no JavaScript, operadores comparativos, estruturas de repetição e condicionais, Arrays e aprenderemos sobre funções no JavaScript e como utilizá-las.
 </p>
+
+### Intensivão - Níveis 01 a 04
+
+<p align="left">
+Acelere o processo com um material que resume os níveis 1 a 4. Ideal para quem deseja pegar um atalho na jornada, revisar conteúdo ou desenvolver mais projetos.
+</p>
 </div>
