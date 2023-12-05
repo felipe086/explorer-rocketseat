@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --base-font: "Mulish", sans-serif;
+  --white: #ffffff;
+  --light-gray: #f9f4fb;
+  --accent-color: #b52184;
+  --text-base-color: #312d64;
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+  color: var(--text-base-color);
+  font-family: var(--base-font);
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5.75rem;
+}
+
+.astronaut {
+  max-width: 22.75rem;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text a {
+  width: 3.625rem;
+  height: 6.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  border: 4px solid var(--accent-color);
+  border-radius: 76rem;
+  animation: scroll-down 1.5s ease-in-out infinite;
+  transition: filter 0.3s;
+}
+
+.hero-text a:hover {
+  filter: brightness(0.7);
+}
+
+.cards,
+.footer {
+  background: var(--gradient-background);
+}
+
+.cards {
+  padding: 3.25rem 2.5rem;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  list-style: none;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1.25rem;
+}
+
+.card img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  color: var(--accent-color);
+  font-size: 1.875rem;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+}
+
+.contact {
+  padding: 4rem 2.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-family: var(--base-font);
+  font-weight: 900;
+}
+
+.fieldset-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper img {
+  position: absolute;
+  left: 0.875rem;
+  top: 0.75rem;
+}
+
+.input-wrapper input,
+.textarea-wrapper textarea {
+  font-family: var(--base-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-base-color);
+  border: 1.5px solid var(--text-base-color);
+  border-radius: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  width: 100%;
+  max-width: 21.75rem;
+}
+
+.input-wrapper input:focus,
+.textarea-wrapper textarea:focus {
+  outline-color: var(--accent-color);
+}
+
+.textarea-wrapper textarea {
+  padding: 0.75rem;
+  height: 7.5rem;
+  resize: none;
+}
+
+.input-wrapper input::placeholder,
+.textarea-wrapper textarea::placeholder {
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-family: var(--base-font);
+  font-weight: 700;
+  color: var(--white);
+  text-transform: capitalize;
+  border-radius: 1rem;
+  border: none;
+  background: var(--gradient-background);
+  transition: opacity 0.3s;
+}
+
+.contact button:hover {
+  opacity: 0.7;
+}
+
+/* .input-wrapper input::placeholder {
+  padding-left: 1.75rem;
+} */
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--white);
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 2.5rem;
+  }
+
+  .hero > img {
+    order: 2;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+
+  .hero-text a {
+    margin: 12rem 0 0;
+  }
+
+  .astronaut {
+    max-width: 40rem;
+  }
+
+  .cards-list {
+    flex-direction: row;
+  }
+
+  .input-wrapper input,
+  .textarea-wrapper textarea {
+    max-width: 37rem;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
