@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: linear-gradient(288deg, #c2e9fb 0%, #a1c4fd 100%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+input,
+button,
+p,
+h2 {
+  font-family: "DM Sans", sans-serif;
+}
+
+body > div {
+  background-color: #fff;
+  padding: 3rem 4rem;
+  border-radius: 4px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.gameScreen h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: #34355b;
+  margin-bottom: 1rem;
+}
+
+.gameScreen p {
+  color: #34355bcc;
+  margin-bottom: 3rem;
+}
+
+.gameScreen form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.125rem;
+}
+
+.gameScreen form input {
+  padding: 1rem;
+  border-radius: 4px 0 0 4px;
+  background: #dce2e9;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  max-width: 3.75rem;
+}
+
+.gameScreen form button {
+  border-radius: 0px 4px 4px 0;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #7879f1;
+  border-radius: 4px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.resultScreen h2 {
+  font-size: 1.5rem;
+  color: #34355b;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.hide {
+  display: none;
+}
