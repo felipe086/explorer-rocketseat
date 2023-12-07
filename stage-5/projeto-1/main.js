@@ -6,7 +6,11 @@ const playAgainButton = document.querySelector("[data-js='playAgain']")
 const tryButton = document.querySelector("[data-js='try']")
 
 let attempts = 1
-const randomNumber = Math.round(Math.random() * 10)
+let randomNumber = generateRandomNumber()
+
+function generateRandomNumber() {
+  return Math.round(Math.random() * 10)
+}
 
 function toggleScreen() {
   gameScreen.classList.toggle("hide")
@@ -15,6 +19,7 @@ function toggleScreen() {
 
 function handleResetGame() {
   toggleScreen()
+  randomNumber = generateRandomNumber()
   attempts = 1
   // inputNumber.focus()
   // location.reload()
