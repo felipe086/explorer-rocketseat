@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --white: #fff;
+  --text-color: #0c3440;
+  --accent-color: #02799d;
+  --background-color: #040924;
+  --error-color: #f03e3e;
+  --error-text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.alert {
+  padding-block: 0.5rem;
+  background-color: var(--error-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--error-text-color);
+  font-weight: 700;
+  opacity: 1;
+  visibility: hidden;
+  transform: translateY(-50px);
+  transition: transform 0.3s;
+}
+
+.alert.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.card {
+  padding: 3rem 4rem;
+  /* padding: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem); */
+  border-radius: 4px;
+  background-color: #fff;
+  max-width: 26rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.input-wrapper label {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.input-wrapper input {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  background: #dce2e9;
+  color: #212529;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input-wrapper input:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+form button {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-family: inherit;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--white);
+  border-radius: 4px;
+  position: relative;
+  padding: 2.5rem;
+}
+
+.modal button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.modal .title {
+  margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 1.5rem 2rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}
