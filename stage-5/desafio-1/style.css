@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  color: #34355b;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+body > div {
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: clamp(1rem, 0.4286rem + 2.8571vw, 3rem) clamp(1rem, 0.1429rem + 4.2857vw, 4rem);
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  max-width: 26rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.homeScreen p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.homeScreen img {
+  cursor: pointer;
+}
+
+.homeScreen img:hover {
+  animation: shake 0.5s infinite;
+}
+
+div img {
+  justify-self: center;
+  width: clamp(12.5rem, 11.7857rem + 3.5714vw, 15rem);
+}
+
+.message-wrapper {
+  padding: 0.75rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+}
+
+.message {
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  color: #000;
+  text-align: center;
+}
+
+button {
+  border-radius: 4px;
+  background: #ff9500;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  justify-self: center;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
