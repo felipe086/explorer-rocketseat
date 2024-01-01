@@ -38,4 +38,11 @@ Neste módulo veremos sobre: Variáveis, operadores matemáticos, tipos de dados
 <p align="left">
 Acelere o processo com um material que resume os níveis 1 a 4. Ideal para quem deseja pegar um atalho na jornada, revisar conteúdo ou desenvolver mais projetos.
 </p>
+
+### Stage 05 - Avançando no JavaScript
+
+<p align="left">
+Neste módulo veremos sobre: Como manipular o navegador utilizando a DOM, funções callbacks, recursividade, princípios do Clean Code, ES6 Modules, padrão Factory, injeção de dependências, refatoração de código e muito mais...
+</p>
+
 </div>
