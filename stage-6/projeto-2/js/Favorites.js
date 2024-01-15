@@ -103,6 +103,3 @@ export class FavoritesView extends Favorites {
     return tr
   }
 }
-
-// this.entries.filter(user => user.login != data.login)
-// event.target.dataset.id (id=login)
