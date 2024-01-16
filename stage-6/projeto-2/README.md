@@ -29,4 +29,3 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
-- Node e NPM
