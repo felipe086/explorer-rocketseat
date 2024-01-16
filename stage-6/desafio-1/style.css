@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizedLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --text-color: hsl(240, 7%, 78%);
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(240, 9%, 89%);
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  background-image: url("./assets/mountains-universe-1.png");
+}
+
+body:has(#home) {
+  background-image: url("./assets/mountains-universe-1.png");
+}
+
+body:has(#universe) {
+  background-image: url("./assets/mountains-universe-2.png");
+}
+
+body:has(#exploration) {
+  background-image: url("./assets/mountains-universe-3.png");
+}
+
+nav {
+  padding: 2.5rem 4.5rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+nav ul a {
+  color: var(--text-color);
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+nav ul a.active,
+nav ul a:hover {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#app div:not(#home) {
+  max-width: 40rem;
+  margin-top: 4rem;
+  margin-left: 4.5rem;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+#home {
+  margin-top: 10rem;
+  margin: 10rem auto 0;
+  text-align: center;
+}
+
+#home h1 {
+  margin-bottom: 1.5rem;
+}
+
+#home button {
+  padding: 0.75rem 2rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: transparent;
+  border-radius: 4px;
+  border-color: 2px solid var(--primary-color);
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+#home button:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 750px) {
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #app div:not(#home) {
+    max-width: 100%;
+    margin-left: 0;
+    padding-inline: 2rem;
+  }
+}
