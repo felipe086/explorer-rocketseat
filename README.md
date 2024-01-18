@@ -8,7 +8,7 @@ O programa é desenvolvido com 70% do conteúdo técnico, 20% de networking e 10
 
 ## Repositórios
 
-### Stage 1 - Fundamentos da programação WEB
+### [Stage 1 - Fundamentos da programação WEB](/stage-1/)
 
 <p align="left">
 Neste módulo veremos conceitos básicos sobre programação: como e por que programar. Iremos entender o que é lógica, aprender várias dicas e até mesmo possíveis ações para melhorarmos esse ponto.
