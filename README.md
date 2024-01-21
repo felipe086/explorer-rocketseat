@@ -51,4 +51,10 @@ Neste módulo veremos sobre: Como manipular o navegador utilizando a DOM, funç�
 Neste módulo veremos sobre: Conceitos de SPA (Single Page Application), trabalharemos com eventos no JavaScript, assincronismo, promises, conceitos de POO (Programação Orientada a Objetos) como classes, herança e polimorfismo. Também trabalharemos com imutabilidade, tratamento de erros, localStorage, consumo da API do Github e muito mais.
 </p>
 
+### [Stage 07 - Git & Github](/stage-7/)
+
+<p align="left">
+Neste módulo você aprenderá sobre: Git, uma ferramenta para controle de versões e como utilizar o Github para armazenar o código fonte do seu projeto, além de ser uma ótima estratégia de portfólio para mostrar para empresas e recrutadores.
+</p>
+
 </div>
