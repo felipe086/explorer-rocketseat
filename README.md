@@ -57,4 +57,10 @@ Neste módulo veremos sobre: Conceitos de SPA (Single Page Application), trabalh
 Neste módulo você aprenderá sobre: Git, uma ferramenta para controle de versões e como utilizar o Github para armazenar o código fonte do seu projeto, além de ser uma ótima estratégia de portfólio para mostrar para empresas e recrutadores.
 </p>
 
+### [Stage 08 - Introdução ao NodeJs](/stage-8/)
+
+<p align="left">
+Neste módulo veremos sobre: O que é o Node.js como ele funciona e suas vantagens. Construiremos uma API completa utilizando Node.js e Express. Utilizaremos o Insomnia para cadastrar nossas rotas e verificar os status codes das mesmas. Criaremos um banco de dados utilizando SQLite, manipularemos o nosso DB utilizando a ferramenta Beekeeper Studio juntamente com o Query Builder Knex.js.
+</p>
+
 </div>
